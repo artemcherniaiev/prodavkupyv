@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель модерації — ProdavKupyv</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Логотип ProdavKupyv"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="product.html">Картка товару</a></li>
+                <li><a href="create-item.html">Створити оголошення</a></li>
+                <li><a href="profile.html">Особистий кабінет</a></li>
+                <li><a href="admin.html">Модерація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Панель модерації та адміністрування системи</h1>
+
+        <section class="admin-section">
+            <h2>1. Перевірка та видалення некоректних оголошень</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Назва лота</th>
+                        <th>Продавець</th>
+                        <th>Причина скарги</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1024</td>
+                        <td>Куртка брендова (копія)</td>
+                        <td>user_test99</td>
+                        <td>Підозра на контрафакт</td>
+                        <td>
+                            <button type="button">Схвалити</button>
+                            <button type="button">Видалити оголошення</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="admin-section">
+            <h2>2. Управління назвами брендів</h2>
+            <form action="#" method="POST">
+                <label for="old-brand">Стара назва:</label>
+                <input type="text" id="old-brand" name="old_brand" value="Nekee" required>
+                <label for="new-brand">Правильна назва:</label>
+                <input type="text" id="new-brand" name="new_brand" value="Nike" required>
+                <button type="submit">Оновити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ProdavKupyv | Модуль модерації</p>
+    </footer>
+</body>
+</html>

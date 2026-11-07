@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdavKupyv — Головна сторінка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Логотип ProdavKupyv"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="product.html">Картка товару</a></li>
+                <li><a href="create-item.html">Створити оголошення</a></li>
+                <li><a href="profile.html">Особистий кабінет</a></li>
+                <li><a href="admin.html">Модерація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="filters">
+            <h2>Фільтри каталогу</h2>
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>Формат продажу</legend>
+                    <label><input type="checkbox" name="format" value="buy_now"> Купити зараз</label><br>
+                    <label><input type="checkbox" name="format" value="offer"> Можливий торг</label><br>
+                    <label><input type="checkbox" name="format" value="auction"> Аукціон</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Бренди в наявності</legend>
+                    <label><input type="checkbox" name="brand" value="nike"> Nike</label><br>
+                    <label><input type="checkbox" name="brand" value="apple"> Apple</label>
+                </fieldset>
+                <button type="submit">Застосувати</button>
+            </form>
+        </aside>
+
+        <section class="catalog">
+            <h1>Активні оголошення маркетплейсу</h1>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="images/item-1.jpg" alt="Кросівки Nike Air Max у відмінному стані">
+                    <h2>Кросівки Nike Air Max</h2>
+                    <p class="price">2 500 грн</p>
+                    <p class="tag">Опція: Торг дозволено</p>
+                    <a href="product.html">Переглянути лот</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ProdavKupyv. Маркетплейс та торговий майданчик.</p>
+    </footer>
+</body>
+</html>

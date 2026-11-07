@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виставити річ на продаж — ProdavKupyv</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Логотип ProdavKupyv"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="product.html">Картка товару</a></li>
+                <li><a href="create-item.html">Створити оголошення</a></li>
+                <li><a href="profile.html">Особистий кабінет</a></li>
+                <li><a href="admin.html">Модерація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Публікація нового товару</h1>
+        <form action="#" method="POST" enctype="multipart/form-data" class="create-form">
+            <label for="title">Назва товару:</label>
+            <input type="text" id="title" name="title" required placeholder="Наприклад: Кросівки Nike Air Max"><br><br>
+
+            <label for="brand">Бренд:</label>
+            <input type="text" id="brand" name="brand" list="brands-list" required placeholder="Оберіть або введіть бренд">
+            <datalist id="brands-list">
+                <option value="Nike">
+                <option value="Adidas">
+                <option value="Apple">
+            </datalist><br><br>
+
+            <label for="price">Початкова ціна (грн):</label>
+            <input type="number" id="price" name="price" required placeholder="2500"><br><br>
+
+            <fieldset>
+                <legend>Формати продажу</legend>
+                <label><input type="checkbox" name="allow_offer" value="1"> Дозволити торг ("Запропонувати ціну")</label><br>
+                <label><input type="checkbox" name="is_auction" value="1"> Активувати аукціон з таймером</label>
+            </fieldset><br>
+
+            <label for="image">Фотографії товару:</label>
+            <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+            <button type="submit">Опублікувати оголошення</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ProdavKupyv. Маркетплейс та торговий майданчик.</p>
+    </footer>
+</body>
+</html>

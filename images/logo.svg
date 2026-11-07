@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 120" width="580" height="120">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Синя кнопка з курсором -->
+  <rect x="10" y="20" width="76" height="76" rx="22" fill="#2563eb" />
+  <path d="M38 36 L62 60 L51 61 L57 73 L51 76 L44 64 L36 71 Z" fill="#ffffff" />
+
+  <!-- Три точки -->
+  <circle cx="106" cy="58" r="3.5" fill="#94a3b8" />
+  <circle cx="118" cy="58" r="3.5" fill="#94a3b8" />
+  <circle cx="130" cy="58" r="3.5" fill="#10b981" />
+
+  <!-- Зелений круг із галочкою -->
+  <circle cx="170" cy="58" r="36" fill="#10b981" filter="url(#shadow)" />
+  <path d="M153 58 L164 69 L186 47" stroke="#ffffff" stroke-width="6.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Повна назва ProdavKupyv -->
+  <text x="225" y="66" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="900" fill="#0f172a">Prodav<tspan fill="#10b981">Kupyv</tspan></text>
+
+  <!-- Слоган -->
+  <text x="227" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="1.2" fill="#64748b">ONE CLICK TO DEAL</text>
+</svg>
