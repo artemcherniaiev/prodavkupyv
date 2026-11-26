@@ -1,0 +1,174 @@
+/* Кнопка мобільного меню */
+.menu-toggle {
+    display: none;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 8px 14px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Картка товару */
+.product-card {
+    width: 100%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    box-shadow: var(--shadow-soft);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+    .product-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .product-card img {
+        max-width: 100%;
+        border-radius: var(--radius-md);
+        margin-bottom: 10px;
+    }
+
+.price,
+.timer {
+    font-size: 1.2rem;
+    color: var(--color-emerald);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.auction-timer {
+    color: var(--color-amber);
+}
+
+/* Елементи форм, валідація та кнопки */
+form {
+    background-color: var(--bg-surface);
+    padding: 18px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 12px 14px;
+    margin-bottom: 14px;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 6px;
+    color: var(--text-primary);
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--text-primary);
+    background-color: var(--bg-surface);
+    transition: border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--color-blue);
+    margin-right: 6px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Клієнтська валідація HTML5 та стани помилок */
+input:not(:placeholder-shown):invalid,
+select:invalid,
+textarea:not(:placeholder-shown):invalid {
+    border-color: var(--color-danger);
+    background-color: rgba(239, 68, 68, 0.04);
+}
+
+    input:not(:placeholder-shown):invalid:focus,
+    textarea:not(:placeholder-shown):invalid:focus {
+        box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.18);
+    }
+
+input:not(:placeholder-shown):valid:not([type="file"]) {
+    border-color: var(--color-emerald);
+}
+
+.error-message,
+.field-error {
+    display: none;
+    color: var(--color-danger-dark);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+input:not(:placeholder-shown):invalid + .error-message,
+input:not(:placeholder-shown):invalid + .field-error,
+textarea:not(:placeholder-shown):invalid + .error-message,
+textarea:not(:placeholder-shown):invalid + .field-error,
+.form-error.visible {
+    display: block;
+}
+
+.form-error {
+    display: none;
+    padding: 10px 12px;
+    border-radius: var(--radius-md);
+    background-color: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: var(--color-danger-dark);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+button {
+    font-family: inherit;
+    background-color: var(--color-blue);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+    button:hover {
+        background-color: var(--color-blue-hover);
+        transform: translateY(-1px);
+    }
+
+.btn-buy {
+    background-color: var(--color-emerald);
+}
+
+    .btn-buy:hover {
+        background-color: var(--color-emerald-hover);
+    }
